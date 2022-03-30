@@ -8,7 +8,7 @@ async function registerMessage(msg, glob) {
 
     if (msg.author.id === "949310364565274644") person = 'saira'
     else if (msg.author.id === "726735174229819392") person = 'mueed'
-    else if (msg.author.id === "726735174229819392") person = 'mooni'
+    else if (msg.author.id === "700733092595236995") person = 'mooni'
     else return
 
     const spiedMessage = new SpiedMessageInstance(msg, glob.time);

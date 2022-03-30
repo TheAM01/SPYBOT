@@ -18,7 +18,7 @@ async function fetch (msg, args, glob) {
 
     let cachedMessages = await db.get(`${person}_db_messages`);
 
-    if (!cachedMessages[0]) return msg.reply('`404`')
+    if (!cachedMessages) return msg.reply('`404`')
 
     // return console.log(cachedMessages);
 
