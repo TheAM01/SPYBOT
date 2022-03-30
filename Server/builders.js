@@ -9,6 +9,7 @@ function SpiedMessageInstance(msg, time) {
 
     if (msg.author.id === '726735174229819392') this.author = 'Mueed';
     if (msg.author.id === '949310364565274644') this.author = 'Saira'
+    if (msg.author.id === '700733092595236995') this.author = 'Mooni'
 
     this.messageContent = msg.content;
     this.channel = msg.channel.name;

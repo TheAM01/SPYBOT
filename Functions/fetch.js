@@ -22,9 +22,9 @@ async function fetch (msg, args, glob) {
 
     // return console.log(cachedMessages);
 
-    cachedMessages.forEach(item => {
+    cachedMessages.forEach((item, i) => {
         msg.channel.send(
-            `${item.author} at ${item.timeStamp} in ${item.channel}: \` ${item.messageContent} \``
+            `${i}. ${item.author} at ${item.timeStamp} in ${item.channel}: \` ${item.messageContent} \``
         )
     });
 

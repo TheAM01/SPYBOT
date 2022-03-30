@@ -34,10 +34,7 @@ async function messageHandler (msg) {
     }
 
     if (cmd === '^init') {
-        await db.set('mueed_db_messages', []);
-        await db.set('saira_db_messages', []);
-        await db.set('mooni_db_messages', []);
-        return msg.reply('`200`')
+        return await init(msg, args, glob)
     }
 
     if (cmd === '^info') {
@@ -48,8 +45,6 @@ async function messageHandler (msg) {
     if (msg.author.id === '949310364565274644' || msg.author.id === "726735174229819392" || msg.author.id === '700733092595236995') {
         return await registerMessage(msg, glob)
     }
-
-
 
 
 }
