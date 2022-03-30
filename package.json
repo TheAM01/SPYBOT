@@ -1,0 +1,19 @@
+{
+  "name": "spy_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@replit/database": "^2.0.1",
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.2.3"
+  },
+  "type": "module"
+}
