@@ -28,7 +28,7 @@ function SpiedMessageInstance(msg, time) {
         let consent = await db.get(`${person}_consent`);
 
         const spyChannel = client.channels.cache.get("954838298088583219");
-        if (consent == true || consent == null) spyChannel.send(`${person}: \` ${this.messageContent} \``)
+        if (consent === true || consent == null) spyChannel.send(`${person}: \` ${this.messageContent} \``)
 
     }
 

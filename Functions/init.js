@@ -3,13 +3,7 @@ import crypto from "../Server/crypto.js";
 
 async function main (msg, args, glob) {
 
-    if (!args[1]) return msg.reply(`Error: Missing argument \`args[1]: [query:string]\`.`)
-    if (!args[2]) return msg.reply(`Error: Missing argument \`args[2]: [value:any]\`.`)
-
-    const query = args[1].toString().toLowerCase();
-    const value = args[2].toString().toLowerCase();
-
-    msg.channel.send(`Auto detected user: \`${msg.author.id}\`. Enter admin password to set \`${query}\` to \`${value}\`.`)
+    msg.channel.send(`Auto detected user: \`${msg.author.id}\`. Enter admin password to initialize \`mueed_db_messages\` & \`mooni_db_messages                                                                      \`.`)
 
     const msgFilter = (m) => m.author.id === msg.author.id;
 

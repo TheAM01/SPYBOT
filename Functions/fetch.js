@@ -24,7 +24,7 @@ async function fetch (msg, args, glob) {
 
     cachedMessages.forEach((item, i) => {
         msg.channel.send(
-            `${i}. ${item.author} at ${item.timeStamp} in ${item.channel}: \` ${item.messageContent} \``
+            `${i+1}. ${item.author} at ${item.timeStamp} in ${item.channel}: \` ${item.messageContent} \``
         )
     });
 
